@@ -1,5 +1,5 @@
 """ Terminal view module """
-
+from prettytable import PrettyTable
 
 def print_table(table, title_list):
     """
@@ -22,7 +22,9 @@ def print_table(table, title_list):
         None: This function doesn't return anything it only prints to console.
     """
 
-    # your goes code
+    t = PrettyTable([title_list])
+    t.add_row([table])
+    print(t)
 
 
 def print_result(result, label):
