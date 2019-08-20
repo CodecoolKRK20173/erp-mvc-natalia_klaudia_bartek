@@ -63,7 +63,18 @@ def print_menu(title, list_options, exit_message):
         None: This function doesn't return anything it only prints to console.
     """
 
-    # your code
+    list_options = []
+    main_menu = ["Store manager",
+                "Human resources manager",
+                "Inventory manager",
+                "Accounting manager",
+                "Sales manager",
+                "Customer Relationship Management (CRM)"]
+    submenu = ["Show table",
+                "Add new item",
+                "Update item",
+                "Remove item"]
+    
 
 
 def get_inputs(list_labels, title):
@@ -106,5 +117,5 @@ def print_error_message(message):
     Returns:
         None: This function doesn't return anything it only prints to console.
     """
-
+    print("\033[1;31;40m " + message)
     # your code

@@ -28,6 +28,8 @@ def add(table, record):
         list: Table with a new record
     """
     # your code
+    file_name = items.csv
+    table = get_table_from_file(file_name)
 
     return table
 
