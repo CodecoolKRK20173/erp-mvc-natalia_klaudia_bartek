@@ -52,7 +52,6 @@ def print_menu(title, list_options, exit_message):
             (4) Accounting manager
             (5) Sales manager
             (6) Customer relationship management (CRM)
-            (0) Exit program
 
     Args:
         title (str): menu title
@@ -63,13 +62,14 @@ def print_menu(title, list_options, exit_message):
         None: This function doesn't return anything it only prints to console.
     """
 
-    list_options = []
-    main_menu = ["Store manager",
-                "Human resources manager",
-                "Inventory manager",
-                "Accounting manager",
-                "Sales manager",
-                "Customer Relationship Management (CRM)"]
+
+    list_options = ["",
+                "(1)Store manager",
+                "(2)Human resources manager",
+                "(3)Inventory manager",
+                "(4)Accounting manager",
+                "(5)Sales manager",
+                "(6)Customer Relationship Management (CRM)",]
 
     submenu = ["Show table",
                 "Add new item",
@@ -87,7 +87,7 @@ def print_menu(title, list_options, exit_message):
     exits = ["Goodbye"]
 
     print(title)
-    print(list_options)
+    print("\n".join(list_options))
     print(exit_message)
     
 
@@ -118,8 +118,7 @@ def get_inputs(list_labels, title):
     return inputs
 
 def get_choice(options):
-    options = main_menu
-    print_menu("Main menu",options, "Exit program")
+    print_menu("Main menu",options, "(0)Exit program")
     inputs = get_inputs(["Please enter a number: "], "")
     return inputs[0]
 
