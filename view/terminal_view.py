@@ -84,7 +84,6 @@ def print_menu(title, list_options, exit_message):
             "Sales manager", 
             "Customer Relationship Management (CRM)"]
     
-    exits = ["Goodbye"]
 
     print(title)
     print("\n".join(list_options))
@@ -113,7 +112,7 @@ def get_inputs(list_labels, title):
     """
     inputs = []
 
-    # your code
+    inputs += input("\n".join(list_labels))
 
     return inputs
 
