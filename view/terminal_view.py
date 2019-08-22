@@ -70,10 +70,25 @@ def print_menu(title, list_options, exit_message):
                 "Accounting manager",
                 "Sales manager",
                 "Customer Relationship Management (CRM)"]
+
     submenu = ["Show table",
                 "Add new item",
                 "Update item",
                 "Remove item"]
+
+    titles = ["Main menu",
+            "Store manager",
+            "Human resources manager",
+            "Inventory manager",
+            "Accounting manager",
+            "Sales manager", 
+            "Customer Relationship Management (CRM)"]
+    
+    exits = ["Goodbye"]
+
+    print(title)
+    print(list_options)
+    print(exit_message)
     
 
 
@@ -103,6 +118,7 @@ def get_inputs(list_labels, title):
     return inputs
 
 def get_choice(options):
+    options = main_menu
     print_menu("Main menu",options, "Exit program")
     inputs = get_inputs(["Please enter a number: "], "")
     return inputs[0]
