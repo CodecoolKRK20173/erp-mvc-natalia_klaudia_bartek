@@ -16,9 +16,9 @@ def run():
                "Accounting manager",
                "Sales manager",
                "Customer Relationship Management (CRM)"]
-
+    argument = None
     choice = None
-    while choice != "0":
+    while argument != "0":
         choice = terminal_view.get_choice(options)
         if choice == "1":
             store_controller.run()
@@ -32,5 +32,7 @@ def run():
             sales_controller.run()
         elif choice == "6":
             crm_controller.run()
+        elif choice == "0":
+            argument = terminal_view.kutas_kurwa()
         else:
             terminal_view.print_error_message("There is no such choice.")
