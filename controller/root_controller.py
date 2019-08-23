@@ -7,9 +7,14 @@ from controller import accounting_controller
 from controller import sales_controller
 from controller import crm_controller
 from controller import common
+import os
 
 
 def run():
+
+    os.system('cls||clear')
+
+    title = "Main menu\n"
 
     options = ["(1) Store manager",
                "(2) Human resources manager",
@@ -17,11 +22,13 @@ def run():
                "(4) Accounting manager",
                "(5) Sales manager",
                "(6) Customer Relationship Management (CRM)"]
+    
+    exit_message = "(0) Exit program\n"
 
     argument = None
     choice = None
     while argument != "0":
-        choice = terminal_view.get_choice(options)
+        choice = terminal_view.get_choice(title, options, exit_message)
         if choice == "1":
             store_controller.run()
         elif choice == "2":

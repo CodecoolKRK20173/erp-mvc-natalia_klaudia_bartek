@@ -10,6 +10,8 @@ def display_clear():
 
 
 def basic_submenu():
+    title = "Store manager\n"
+            
     options = ["(1) View table",
                 "(2) Add to table",
                 "(3) Remove from table",
