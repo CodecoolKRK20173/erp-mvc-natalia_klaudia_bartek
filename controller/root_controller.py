@@ -10,6 +10,7 @@ from controller import common
 
 
 def run():
+<<<<<<< HEAD
     options = ["(1) Store manager",
                "(2) Human resources manager",
                "(3) Inventory manager",
@@ -17,8 +18,17 @@ def run():
                "(5) Sales manager",
                "(6) Customer Relationship Management (CRM)"]
 
+=======
+    options = ["Store manager",
+               "Human resources manager",
+               "Inventory manager",
+               "Accounting manager",
+               "Sales manager",
+               "Customer Relationship Management (CRM)"]
+    argument = None
+>>>>>>> 4934110b2b936cd42fbae20b0b06e2c8100333ad
     choice = None
-    while choice != "0":
+    while argument != "0":
         choice = terminal_view.get_choice(options)
         if choice == "1":
             store_controller.run()
@@ -32,5 +42,7 @@ def run():
             sales_controller.run()
         elif choice == "6":
             crm_controller.run()
+        elif choice == "0":
+            argument = terminal_view.kutas_kurwa()
         else:
             terminal_view.print_error_message("There is no such choice.")

@@ -133,3 +133,7 @@ def print_error_message(message):
     """
     print("\033[1;31;40m " + message)
     # your code
+def kutas_kurwa():
+    print("Thank you for using our program")
+    argument = "0"
+    return argument
