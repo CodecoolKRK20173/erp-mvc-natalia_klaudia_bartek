@@ -16,3 +16,5 @@ def run():
 
     # your code
     common.display_clear()
+
+    common.basic_submenu()

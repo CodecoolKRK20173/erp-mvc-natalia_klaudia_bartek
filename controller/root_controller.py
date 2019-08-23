@@ -10,12 +10,12 @@ from controller import common
 
 
 def run():
-    options = ["Store manager",
-               "Human resources manager",
-               "Inventory manager",
-               "Accounting manager",
-               "Sales manager",
-               "Customer Relationship Management (CRM)"]
+    options = ["(1) Store manager",
+               "(2) Human resources manager",
+               "(3) Inventory manager",
+               "(4) Accounting manager",
+               "(5) Sales manager",
+               "(6) Customer Relationship Management (CRM)"]
 
     choice = None
     while choice != "0":

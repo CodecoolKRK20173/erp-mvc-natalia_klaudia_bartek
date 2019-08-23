@@ -14,6 +14,17 @@ from model import data_manager
 from model import common
 
 
+def show(table):
+    """
+    Show table
+
+    Args:
+        table(list): table to show
+    Returns:
+        nuddin
+    """
+    
+
 def add(table, record):
     """
     Add new record to table

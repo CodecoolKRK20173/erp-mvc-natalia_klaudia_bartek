@@ -63,13 +63,13 @@ def print_menu(title, list_options, exit_message):
     """
 
 
-    list_options = ["",
-                "(1)Store manager",
-                "(2)Human resources manager",
-                "(3)Inventory manager",
-                "(4)Accounting manager",
-                "(5)Sales manager",
-                "(6)Customer Relationship Management (CRM)",]
+    #list_options = ["",
+    #            "(1)Store manager",
+    #            "(2)Human resources manager",
+    #            "(3)Inventory manager",
+    #            "(4)Accounting manager",
+    #            "(5)Sales manager",
+    #            "(6)Customer Relationship Management (CRM)",]
 
     submenu = ["Show table",
                 "Add new item",
