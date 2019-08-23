@@ -10,15 +10,18 @@ def display_clear():
 
 
 def basic_submenu():
+    title = "Store manager\n"
+
     options = ["(1) View table",
                 "(2) Add to table",
                 "(3) Remove from table",
-                "(4) Update table",
-                "(0) Return to main menu"]
+                "(4) Update table",]
+
+    exit_message = "(0) Back to main menu\n"
     
     choice = None
     while choice != "0":
-        choice = terminal_view.get_choice(options)
+        choice = terminal_view.get_choice(title, options, exit_message)
         if choice == "1":
             store.show(table)
         elif choice == "2":
